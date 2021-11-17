@@ -1,0 +1,28 @@
+package classprogramming;
+import java.util.Scanner;
+public class classprogramming {
+	public static void main(String[] args) {
+		double a,b;
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter your score for the subject A:");
+		a=scan.nextDouble();
+		System.out.println("Enter your score for the subject B:");
+		b=scan.nextDouble();
+		
+		if(a>50) {
+			System.out.println("Subject A is passed");
+		}else {
+			System.out.println("Subject A is not passed");
+		}
+		if(b>50) {
+			System.out.println("Subject B is passed");
+		}else {
+			System.out.println("Subject B is not passed");
+		}
+		if(a>b) {
+			System.out.println("The score of subject A greater than B");
+		}else {
+			System.out.println("The score of subject B greater than A");
+		}
+	}
+}
