@@ -1,0 +1,40 @@
+package classprogramming;
+import java.util.Scanner;
+public class switch1 {
+public static void main(String[] args) {
+	int  a,b;
+	int average;
+	Scanner scan=new Scanner(System.in);
+	System.out.println("Enter your score for subject1:");
+	a=scan.nextInt();
+	System.out.println("Enter your score for subject2:");
+	b=scan.nextInt();
+	average=(a+b)/2;
+	if(average>100||average<0)
+		{System.out.println("error");
+		return;}
+	switch(average/10)
+	{
+	case 10:		
+	case 9:
+	case 8:
+		System.out.println("Average score is A");
+	break;
+	case 7:
+	case 6:
+		System.out.println("Average score is B");
+	break;
+	case 5:
+		System.out.println("Average score is C");
+	break;
+	case 4:
+	case 3:
+	case 2:
+	case 1:
+		System.out.println("Not passed");
+	break;
+	}
+
+	
+}
+}
